@@ -1,5 +1,5 @@
 {
-  "name": "api-products",
+  "name": "api-movies",
   "version": "1.0.0",
   "description": "NodeJs API who use express and mongodb",
   "main": "server.js",
