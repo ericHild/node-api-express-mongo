@@ -2,9 +2,8 @@ const express = require('express');
 
 const app = express();
 
-app.get('/api/products', (req, res, next) => {
-    res.status(200).json({ message: 'PRODUCTS API'});
-    next();
-})
+const movieRoutes = require('./routes/movie');
+
+app.use('/api/movies', movieRoutes);
 
 module.exports = app;
