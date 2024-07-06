@@ -3,8 +3,9 @@ const movieRoutes = require('./routes/movie');
 const mongoose = require('mongoose');
 
 const app = express();
+const DB_URL = require('./db_conf');
 
-mongoose.connect('mongodb+srv://praline:praline@cluster0.6hdenaz.mongodb.net/', {
+mongoose.connect(DB_URL, {
     usenewUrlParser: true,
     useUnifiedTopology: true
 })
